@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-image: url('../images/background.jpg');
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-name {
+    color: #2ba6e7;
+}
+
+.display-name:hover {
+    color: #1693d6;
+}
+
+header {
+    background: rgb(165 216 245 / 90%); /* HEX a5d8f5 */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    width: max-content;
+}
+
+.navbar-links > li{
+    margin-right: 20px;
+    display: inline-block;
+    padding: 4px;
+}
+
+.navbar-links a {
+    color: #2ba6e7;
+}
+
+.navbar-links a:hover{
+    color: white;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.welcome-card {
+    text-align: left;
+    padding: 20px;
+    transform: translate(0, 25%);
+}
+
+.pfp-headshot img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    transform: scale(0.8) translate(0, 20%);
+}
+
+.welcome-card h2 {
+    font-size: 50px;
+}
+
+.welcome-card h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#Home, #About, #Projects, #Contact {
+    scroll-margin-top: 49px;
+    text-align: center;
+}
+
+#Home {
+    text-align: center;
+    min-height: 100vh;
+}
+
+#About {
+    text-align: center;
+}
+
+#Projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#Projects h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#Projects div {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#Projects img {
+    width: 200px;
+    height: 200px;
+}
+
+#Contact {
+    text-align: center;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #6ab5dd;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.social-form {
+    max-width: 600px;
+    display:grid;
+    grid-template-columns: auto auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+}
+
+.social-form div {
+    padding: 10px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    background-color: #2ba6e7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a9de4;
+}
+
+/* @media (max-width: 800px) {
+    .navbar-links li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: block;
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pfp-headshot img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #Projects {
+        grid-template-columns: 1fr;
+    }
+} */
